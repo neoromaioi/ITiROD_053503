@@ -1,25 +1,36 @@
 #include <stdio.h>
-#include <unistd.h>
-#include <sys/types.h>
 #include <sys/socket.h>
+#include <string.h>
 #include <netinet/in.h>
-int main(int argc, char* argv[])
+#define MAX 100
+ 
+int main(int argc, char** argv)
 {
-    int cfd;
-    struct sockaddr_in addr;
-    char ch='r';
-    cfd=socket(AF_INET, SOCK_STREAM, 0);
-    addr.sin_family=AF_INET;
-    addr.sin_addr.s_addr=inet_addr("127.0.0.1"); /* Check for server on loopback */
-    addr.sin_port=htons(29008);
-    if(connect(cfd, (struct sockaddr *)&addr,
-    sizeof(addr))<0) {
-        perror("connect error");
+    int sfd, n;
+    socklen_t len;
+    char sline[MAX], rline[MAX+1];
+    struct sockaddr_in saddr;
+ 
+    if(argc!=2) {
+        printf("Usage: %s ipaddress\n", argv[0]);
         return -1;
     }
-    if(write(cfd, &ch, 1)<0) perror("write");
-    if(read(cfd, &ch, 1)<0) perror("read");
-    printf("nReply from Server: %cnn",ch);
-    close(cfd);
+ 
+    sfd = socket(AF_INET, SOCK_DGRAM, 0);   
+ 
+    bzero(&saddr, sizeof(saddr));
+    saddr.sin_family = AF_INET;
+    inet_pton(AF_INET, argv[1], &saddr.sin_addr);
+    saddr.sin_port = htons(2910);
+ 
+    printf("Client Running\n");
+    while(fgets(sline, MAX, stdin)!=NULL) {
+        len=sizeof(saddr);
+        sendto(sfd, sline, strlen(sline), 0, (struct sockaddr *)&saddr, len);
+        n=recvfrom(sfd, rline, MAX, 0, NULL, NULL);
+        rline[n]=0;
+        fputs(rline, stdout);
+    }
+ 
     return 0;
 }
