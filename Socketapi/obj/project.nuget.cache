@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "nyBBcSgURx4OwipQ2EZXzuFIve/Yp2nyRH8g+jzLGRH0sFrqtA9xphW/u992qej57wf0FkaX2SzaS34P362YdA==",
+  "success": true,
+  "projectFilePath": "C:\\Socketapi\\Socketapi\\Socketapi\\Socketapi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\neoromaioi\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

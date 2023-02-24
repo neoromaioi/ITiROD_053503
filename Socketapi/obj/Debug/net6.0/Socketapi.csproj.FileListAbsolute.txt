@@ -1,0 +1,17 @@
+C:\Socketapi\Socketapi\Socketapi\bin\Debug\net6.0\Socketapi.exe
+C:\Socketapi\Socketapi\Socketapi\bin\Debug\net6.0\Socketapi.deps.json
+C:\Socketapi\Socketapi\Socketapi\bin\Debug\net6.0\Socketapi.runtimeconfig.json
+C:\Socketapi\Socketapi\Socketapi\bin\Debug\net6.0\Socketapi.dll
+C:\Socketapi\Socketapi\Socketapi\bin\Debug\net6.0\Socketapi.pdb
+C:\Socketapi\Socketapi\Socketapi\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Socketapi\Socketapi\Socketapi\obj\Debug\net6.0\Socketapi.csproj.AssemblyReference.cache
+C:\Socketapi\Socketapi\Socketapi\obj\Debug\net6.0\Socketapi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Socketapi\Socketapi\Socketapi\obj\Debug\net6.0\Socketapi.AssemblyInfoInputs.cache
+C:\Socketapi\Socketapi\Socketapi\obj\Debug\net6.0\Socketapi.AssemblyInfo.cs
+C:\Socketapi\Socketapi\Socketapi\obj\Debug\net6.0\Socketapi.csproj.CoreCompileInputs.cache
+C:\Socketapi\Socketapi\Socketapi\obj\Debug\net6.0\Socketapi.csproj.CopyComplete
+C:\Socketapi\Socketapi\Socketapi\obj\Debug\net6.0\Socketapi.dll
+C:\Socketapi\Socketapi\Socketapi\obj\Debug\net6.0\refint\Socketapi.dll
+C:\Socketapi\Socketapi\Socketapi\obj\Debug\net6.0\Socketapi.pdb
+C:\Socketapi\Socketapi\Socketapi\obj\Debug\net6.0\Socketapi.genruntimeconfig.cache
+C:\Socketapi\Socketapi\Socketapi\obj\Debug\net6.0\ref\Socketapi.dll
