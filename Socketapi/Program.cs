@@ -55,7 +55,7 @@ Task.Run(ReceiveMessageAsync);
 // запускаем ввод и отправку сообщений
 await SendMessageAsync();
 
-// отправка сообщений в группу
+// отправка сообщений
 async Task SendMessageAsync()
 {
     using Socket sender = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
@@ -93,7 +93,7 @@ async Task SendMessageAsync()
         await sender.SendToAsync(data, 0, new IPEndPoint(localAddress, remotePort));
     }
 }
-// отправка сообщений
+// получение сообщений
 async Task ReceiveMessageAsync()
 {
     byte[] data = new byte[65535]; // буфер для получаемых данных
