@@ -1,18 +1,31 @@
 ### Book Wiki
-____
-![unnormalized database](https://github.com/neoromaioi/SUBD/raw/main/Picture1.png)
 
-## Authentification page
+
 ____
-![unnormalized database](https://github.com/neoromaioi/SUBD/raw/main/Picture1.png)
 
 ## Main page
+
+https://www.figma.com/file/HjKeMOxE39bneY0BSFd1KK/ITIROD2?node-id=0%3A1&t=Hj6gkcISgedn3Obx-1
 ____
-![unnormalized database](https://github.com/neoromaioi/SUBD/raw/main/Picture1.png)
+![main page](https://github.com/neoromaioi/ITiROD_053503/blob/lab2/Pictures/Main%20page.png)
+
+## Authentification page
+
+https://www.figma.com/file/HjKeMOxE39bneY0BSFd1KK/ITIROD2?node-id=5%3A153&t=Hj6gkcISgedn3Obx-1
+____
+![sign in](https://github.com/neoromaioi/ITiROD_053503/blob/lab2/Pictures/Sign%20in.png)
+
+## Catalog page
+
+https://www.figma.com/file/HjKeMOxE39bneY0BSFd1KK/ITIROD2?node-id=5%3A200&t=Hj6gkcISgedn3Obx-1
+____
+![catalog](https://github.com/neoromaioi/ITiROD_053503/blob/lab2/Pictures/Catalog.png)
 
 ## Book page
+
+https://www.figma.com/file/HjKeMOxE39bneY0BSFd1KK/ITIROD2?node-id=5%3A293&t=Hj6gkcISgedn3Obx-1
 ____
-![unnormalized database](https://github.com/neoromaioi/SUBD/raw/main/Picture1.png)
+![book page](https://github.com/neoromaioi/ITiROD_053503/blob/lab2/Pictures/Book%20page.png)
 
 1. User roles:
 + default
@@ -27,10 +40,10 @@ ____
     - edit and add books, authors
 - Admin:
     - same as moderator and block user
-____
+
 
 ## Main functions
-____
+
 - Sign in
     Method — "POST"
     Params — username **string**, password **string**
@@ -63,21 +76,21 @@ ____
     Returns the result of the request
 - Add book
     Method — "POST"
-    Params — Name - **string**, Description - **string**, PublishingHouse - **string**, Series - **string**,
+    Params — Name - **string**, Description - **string**, PublishingHouse - **string**,
     Year - **number**, Pages - **number**, Size - **string**, ISBN - **number**
     Returns the result of the request
 - Edit book
     Method — "PUT"
-    Params — Name - **string**, Description - **string**, PublishingHouse - **string**, Series - **string**,
+    Params — Name - **string**, Description - **string**, PublishingHouse - **string**,
     Year - **number**, Pages - **number**, Size - **string**, ISBN - **number**
     Returns the result of the request
 - Search book
     Method — "GET"
     Params — Name **string**
     Returns a list of books
-____
+
 ## Data model description:
-____
+
 
 **Highlighted** fields are primary keys or part of them
 - Authencification data
@@ -90,31 +103,30 @@ ____
     - Name - **string**
     - Password - **string**
     - Email - **string**
-____
+
 - Review info
 
     - **UserID** - **number**
     - **BookID** - **number**
     - Text - **string**
     - Mark - **number**
-____
+
 - Book info
 
     - **BookID** - **number**
     - Name - **string**
     - Description - **string**
     - PublishingHouse - **string**
-    - Series - **string**
     - Year - **number**
     - Pages - **number**
     - Size - **string**
     - ISBN - **number**
-____
+
 - Genre info
 
     - **GenreID** - **number**
     - Name - **string**
-____
+
 - Author info
 
     - **AuthorID** - **number**
