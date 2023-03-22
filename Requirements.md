@@ -1,33 +1,33 @@
-### Book Wiki
+## Book Wiki
 
 
 ____
 
-## Main page
+# Main page
 
 https://www.figma.com/file/HjKeMOxE39bneY0BSFd1KK/ITIROD2?node-id=0%3A1&t=Hj6gkcISgedn3Obx-1
 ____
 ![main page](https://github.com/neoromaioi/ITiROD_053503/blob/lab2/Pictures/Main%20page.png)
 
-## Authentification page
+# Authentification page
 
 https://www.figma.com/file/HjKeMOxE39bneY0BSFd1KK/ITIROD2?node-id=5%3A153&t=Hj6gkcISgedn3Obx-1
 ____
 ![sign in](https://github.com/neoromaioi/ITiROD_053503/blob/lab2/Pictures/Sign%20in.png)
 
-## Catalog page
+# Catalog page
 
 https://www.figma.com/file/HjKeMOxE39bneY0BSFd1KK/ITIROD2?node-id=5%3A200&t=Hj6gkcISgedn3Obx-1
 ____
 ![catalog](https://github.com/neoromaioi/ITiROD_053503/blob/lab2/Pictures/Catalog.png)
 
-## Book page
+# Book page
 
 https://www.figma.com/file/HjKeMOxE39bneY0BSFd1KK/ITIROD2?node-id=5%3A293&t=Hj6gkcISgedn3Obx-1
 ____
 ![book page](https://github.com/neoromaioi/ITiROD_053503/blob/lab2/Pictures/Book%20page.png)
 
-1. User roles:
+### User roles:
 + default
 + moderator
 + admin
