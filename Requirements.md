@@ -1,6 +1,6 @@
 ## Book Wiki
 
-
+Project about what the book is about, its authors and characteristics.
 ____
 
 # Main page
