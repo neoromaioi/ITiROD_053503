@@ -1,0 +1,997 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    background-color: #CDE1E8;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+}
+
+.header__line {
+    display: flex;
+    align-items: center;
+    padding: 5px 50px;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    border-right: 2px solid black;
+    padding-right: 50px;
+}
+
+.header__logo__holder {
+    display: flex;
+    align-items: center;
+}
+
+.logo__title {
+    padding-left: 10px;
+}
+
+.logo__title__text {
+    font-weight: 700;
+    font-size: 32px;
+    color: black;
+    text-decoration: none;
+}
+
+.header__menu {
+    width: 100%;
+}
+
+.header__list {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-inline-start: 15px;
+}
+
+.header__list__item {
+    padding: 0 5px;
+}
+
+.header__list__item__text {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+._catalog {
+    margin-right: 300px;
+}
+
+._catalog_text {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 26px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search__img {
+    margin-left: 8px;
+}
+
+.search__input {
+    width: 100%;
+}
+
+.form-search {
+    display: inline-block;
+    border-bottom: 1px solid;
+    width: 100%;
+}
+
+.form-search__input {
+    all: unset;
+}
+
+.button {
+    user-select: none;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+.signin__btn {
+    padding: 10px 10px 10px;
+    background: transparent;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.signin__btn:hover {
+    background: black;
+    color: white;
+}
+
+.signin__text {
+    color: black;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.signin__text:hover {
+    color: white;
+}
+
+._container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+    box-sizing: content-box;
+}
+
+.new-day {
+    position: relative;
+    max-height: 350px;
+    height: 350px;
+
+}
+
+.new-day__img {
+    max-width: 100%;
+    background: url("images/morning.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.new-day__title {
+    max-width: 500px;
+    max-height: 200px;
+    padding-top: 3%;
+}
+
+.new-day__text {
+    user-select: none;
+    font-size: 50px;
+    font-weight: 700;
+    color: #722E2E;
+}
+
+.new-day__btn {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    padding-left: 11%;
+    padding-bottom: 2%;
+}
+
+.new-day__btn__text {
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+}
+
+.new-day__btn__img {
+
+}
+
+.top-books {
+    display: block;
+    padding-top: 20px;
+}
+
+.top-books__text {
+    color: black;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.top-books__ul {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    list-style: none;
+}
+
+.top-books__ul:last-child {
+    margin-bottom: 70px;
+}
+
+/*.top-book__item {
+    padding: 5px;
+    background: #f5f5f5;
+    border: 1px solid #f5f5f5;
+    outline: none;
+}*/
+
+.top-book__item {
+    text-align: center;
+}
+
+.top-book__item__link {
+
+}
+
+.top-book__item__img {
+    width: 100px;
+    height: 150px;
+}
+
+.top-book__item__title {
+    padding-top: 5px;
+}
+
+.top-book__item__text {
+    color: #722E2E;
+}
+
+.footer {
+    user-select: none;
+    position: fixed;
+    bottom: 0;
+    /*width: auto;*/
+    max-width: 100%;
+    width: 100%;
+    height: 50px;
+    background-color: #CDE1E8;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+}
+
+.footer__label {
+    display: flex;
+    align-items: center;
+    padding-left: 4%;
+}
+
+.footer__text {
+    color: black;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.footer__img {
+    padding-left: 0;
+    padding-top: 10px;
+}
+
+.footer__img__item{
+    padding-left: 15px;
+}
+
+.owner {
+    position: absolute;
+    right: 8%;
+    /*padding-right: 50px;*/
+}
+
+.owner__text {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.header__burger {
+    display: none;
+}
+
+._signin_container, ._signup_container {
+    position: absolute;
+    width: 400px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.signin__label, .signup__label {
+    text-align: center;
+    padding: 0 0 10px 0;
+}
+
+.signin__form, .signup__form {
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.signin__form__text-field, .signup__form__text-field {
+    position: relative;
+    margin: 20px 0;
+}
+
+.signin__form__text-field__input, .signup__form__text-field__input {
+    width: 98%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid black;
+    outline: none;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.signin__form__text-field__input__text, .signup__form__text-field__input__text {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.signin__form__text-field__input::placeholder, .signup__form__text-field__input::placeholder {
+    color: gray;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.signin__submit, .signup__submit {
+    margin-top: 20px;
+}
+
+.signin__submit__btn, .signup__submit__btn {
+    padding: 12px;
+    background: transparent;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.signin__submit__btn:hover, .signup__submit__btn:hover {
+    background: black;
+    color: white;
+}
+
+.signin__submit__text, .signup__submit__text {
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+}
+
+.signin__signup__label {
+    margin-top: 20px;
+}
+
+.signin__signup__link__text {
+    color: #722E2E;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.wrapper {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: content-box;
+}
+
+.genres {
+    max-width: 20%;
+    width: 100%;
+    border-right: 1px solid black;
+}
+
+.genres__label {
+    display: inline-block;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.genres__ul {
+    list-style: none;
+}
+
+.genres__item {
+    padding-top: 20px;
+}
+
+.genres__item:first-child {
+    padding-top: 0;
+}
+
+.genres__label__text, .genres__item__link {
+    font-size: 18px;
+}
+
+.books {
+    max-width: 80%;
+    width: 100%;
+
+}
+
+.books__ul {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 150px);
+    justify-content: space-around;
+    column-gap: 20px;
+    row-gap: 40px;
+    list-style: none;
+}
+
+.books__ul:last-child {
+    margin-bottom: 70px;
+}
+/*.signin__form__text-field__label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+}*/
+
+.book {
+    max-width: 80%;
+    width: 100%;
+    background-color: #F5F6F7;
+    padding-top: 30px;
+}
+
+.book__container {
+    display: flex;
+}
+
+.book__cover-and-traits {
+
+}
+
+.book__cover {
+    padding: 0 50px 20px;
+    width: 250px;
+    height: 350px;
+    overflow: hidden;
+}
+
+.book__cover__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.book__traits {
+    padding-left: 50px;
+}
+
+.book__traits__ul {
+    margin-top: 0;
+}
+
+.book__traits__item {
+    padding-top: 10px;
+}
+
+.book__traits__item__text {
+    color: #3A3A3A;
+    font-size: 18px;
+}
+
+.book__description {
+    padding-right: 20px;
+}
+
+.book__title {
+
+}
+
+.book__title__text {
+    color: #722E2E;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.book__author-and-year {
+    padding-top: 10px;
+    padding-bottom: 8px;
+    display: flex;
+    border-bottom: 1px solid black;
+}
+
+.book__author {
+    display: flex;
+}
+
+.book__author__text {
+    color: #827E7E;
+    font-size: 20px;
+}
+
+.book__year {
+
+}
+
+.book__year__text {
+    color: #827E7E;
+    font-size: 20px;
+}
+
+.book__content {
+    padding-top: 30px;
+}
+
+.book__content__text {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.book__reviews {
+
+}
+
+.reviews__title {
+    padding: 80px 0 80px 80px;
+}
+
+.reviews__title__text {
+    font-weight: 500;
+    font-size: 36px;
+    color: black;
+}
+
+@media (max-width: 1310px) {
+    ._catalog {
+        margin-right: 150px;
+    }
+}
+@media (max-width: 1160px) {
+    ._catalog {
+        margin-right: 50px;
+    }
+    .genres {
+        max-width: 23%;
+    }
+    .books, .book {
+        max-width: 77%;
+    }
+}
+@media (max-width: 1056px) {
+    .header__logo {
+        padding-right: 15px;
+    }
+    ._catalog {
+        margin-right: 0;
+    }
+}
+@media (max-width: 996px) {
+    .header__line {
+        padding: 5px 20px;
+    }
+    .logo__img__holder {
+        padding-top: 2%;
+    }
+    .logo__img {
+        width: 50px;
+        height: 25px;
+    }
+    .logo__title {
+        margin-left: 5px;
+    }
+    .search__input {
+        width: 70%;
+    }
+    .form-search__input {
+        width: 100%;
+    }
+    .logo__title__text {
+        font-weight: 600;
+        font-size: 26px;
+    }
+    .header__list__item__text {
+        font-weight: 400;
+        font-size: 18px;
+    }
+    ._catalog_text {
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .signin__btn {
+        padding: 10px;
+    }
+    .signin__text {
+        font-size: 16px;
+    }
+    .genres {
+        max-width: 23%;
+    }
+    .genres__ul {
+        padding-left: 30px;
+    }
+    .genres__label__text, .genres__item__link {
+        font-size: 16px;
+    }
+    .books, .book {
+        max-width: 77%;
+    }
+    .book__cover {
+        width: 200px;
+        height: 300px;
+    }
+    .book__traits__item__text {
+        font-size: 16px;
+    }
+    .book__content__text, .book__author__text, .book__year__text {
+        font-size: 18px;
+    }
+}
+@media (max-width: 860px) {
+    .genres {
+        max-width: 25%;
+    }
+    .books, .book {
+        max-width: 75%;
+    }
+}
+@media (max-width: 767px) {
+    .header__line {
+        padding: 0 20px;
+        height: 45px;
+    }
+    .header__logo {
+        padding-right: 5px;
+    }
+    .logo__img {
+        display: none;
+    }
+    .logo__title {
+        padding-left: 0;
+        margin-left: 5px;
+    }
+    .nav__item {
+        margin-left: 10px;
+    }
+    .search__input {
+        width: 70%;
+    }
+    .form-search__input {
+        width: 100%;
+    }
+    .logo__title__text {
+        font-weight: 500;
+        font-size: 20px;
+    }
+    .nav__item__text {
+        font-weight: 400;
+        font-size: 16px;
+    }
+    ._catalog_text {
+        font-weight: 500;
+        font-size: 18px;
+    }
+    .signin__btn {
+        margin-left: 5px;
+        padding: 5px;
+    }
+    .signin__text {
+        font-size: 16px;
+    }
+    .new-day {
+        height: 230px;
+    }
+    .new-day__text {
+        font-weight: 600;
+        font-size: 32px;
+    }
+    .footer {
+        display: flow;
+    }
+    .footer__text {
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .owner__text {
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .footer__img {
+        padding-top: 7px;
+    }
+    .footer__img__item {
+        width: 20px;
+        height: 20px;
+        padding-left: 5px;
+    }
+    .genres {
+        max-width: 27%;
+    }
+    .genres__ul {
+        padding-left: 20px;
+    }
+    .books, .book {
+        max-width: 73%;
+    }
+    .book__cover {
+        width: 150px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 650px) {
+    .genres {
+        max-width: 29%;
+    }
+    .books, .book {
+        max-width: 71%;
+    }
+    .book__container {
+        display: block;
+    }
+    .book__cover {
+        padding-right: 0;
+        padding-left: 0;
+        margin: 0 auto;
+        width: 200px;
+        height: 300px;
+    }
+    .book__traits {
+        padding-left: 20px;
+    }
+    .book__description {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .book__title__text {
+        font-size: 32px;
+    }
+    .reviews__title {
+        padding-top: 60px;
+        padding-left: 20px;
+    }
+    .reviews__title__text {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 590px) {
+    .genres {
+        max-width: 30%;
+    }
+    .books, .book {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 555px) {
+    .genres {
+        max-width: 32%;
+    }
+    .books, .book {
+        max-width: 68%;
+    }
+}
+
+@media (max-width: 530px) {
+    .header__burger {
+        position: absolute;
+        right: 14px;
+        top: 14px;
+        display: block;
+        width: 30px;
+        height: 18px;
+        z-index: 3;
+    }
+    .header__burger:before {
+        content: '';
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 0;
+    }
+    .header__burger:after {
+        content: '';
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        bottom: 0;
+    }
+    .header__burger__stripes {
+        position: absolute;
+        background-color: black;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 8px;
+    }
+    .header__burger.active:before {
+        transform: rotate(45deg);
+        top: 8px;
+    }
+    .header__burger.active:after {
+        transform: rotate(-45deg);
+        bottom: 8px;
+    }
+    .header__burger__stripes.active {
+        transform: scale(0);
+    }
+    /*.header__menu {
+        position: fixed;
+        z-index: 4;
+        top: 45px;
+        right: 0;
+        width: 150px;
+        height: 144px;
+        background-color: #dde0e0;
+        box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+    }*/
+    .header__menu {
+        position: fixed;
+        z-index: 4;
+        top: 44px;
+        right: 0;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        background-color: #CDE1E8;
+    }
+    /*.header__list {
+        display: block;
+        text-align: center;
+        padding-left: 0;
+    }*/
+    .header__list {
+        display: flex;
+        text-align: center;
+        padding-left: 0;
+        justify-content: center;
+    }
+    .header__list__item {
+        padding: 0 20px;
+    }
+    /*.header__list li {
+        padding-top: 20px;
+    }
+    .header__list li:last-child, .header__list li:first-child {
+        padding-top: 0;
+    }
+    .header__list__item {
+        padding-left: 0;
+    }*/
+    .header__list__item__s {
+        padding: 0;
+        margin: 0;
+        width: 0;
+    }
+    .search {
+        width: 50%;
+        position: fixed;
+        top: 1.25%;
+        right: 14%;
+        justify-content: center;
+    }
+    .signin__btn {
+        border: none;
+        padding: 0;
+        margin: 0;
+        transition: none;
+    }
+    ._catalog_text {
+        font-weight: 400;
+        font-size: 20px;
+    }
+    .signin__text {
+        font-weight: 400;
+        font-size: 20px;
+    }
+    .header__list__item__text {
+        font-weight: 400;
+        font-size: 20px;
+    }
+    ._container {
+        padding: 0 30px;
+    }
+    .new-day {
+        margin-top: 55px;
+    }
+    .top-books {
+        padding-top: 10px;
+    }
+    .top-books__ul {
+        margin-top: 20px;
+    }
+    .footer {
+        display: block;
+        padding: 5px;
+    }
+    .footer__item {
+        width: 75%;
+        position: relative;
+        margin: 0 auto;
+    }
+    .footer__label {
+        display: flex;
+        padding-left: 0;
+        text-align: center;
+        justify-content: center;
+    }
+    .owner {
+        text-align: center;
+        right: 0;
+    }
+    ._signin_container, ._signup_container {
+        width: 350px;
+    }
+    .signin__submit__btn, .signup__submit__btn {
+        padding: 12px;
+        background: transparent;
+        border: 1px solid black;
+        outline: none;
+        border-radius: 20px;
+        transition: .5s;
+    }
+    .signin__submit__btn:hover, .signup__submit__btn:hover {
+        background: black;
+        color: white;
+    }
+    .signin__submit__text, .signup__submit__text {
+        font-size: 20px;
+        font-weight: 600;
+        color: black;
+    }
+    .genres {
+        max-width: 33%;
+    }
+    .genres__label {
+        padding-left: 10px;
+    }
+    .books, .book {
+        max-width: 67%;
+    }
+    .wrapper {
+        margin-top: 50px;
+    }
+}
+@media (max-width: 470px) {
+    .genres {
+        max-width: 35%;
+    }
+    .genres__ul {
+        padding-left: 15px;
+    }
+    .books, .book {
+        max-width: 65%;
+    }
+}
+@media (max-width: 380px) {
+    ._signin_container, ._signup_container {
+        width: 300px;
+    }
+    .genres {
+        max-width: 37%;
+    }
+    .books, .book {
+        max-width: 63%;
+    }
+}
+
+/*
+<a class="nav__item nav__item__text _catalog _catalog_text" href="@">Каталог</a>
+                    <a class="nav__item nav__item__text" href="@">Контакты</a>
+                    <div class="search">
+                        <div class="search__input">
+                            <form action="/search/" class="form-search">
+                                <input type="search" name="text" autocomplete="off" class="form-search__input">
+                            </form>
+                        </div>
+                        <div class="search__img">
+                            <img src="images/search.jpg" width="25" height="25" alt="">
+                        </div>
+                    </div>
+                    <div class="button signin__btn">
+                        <a class="signin__text" href="@">Войти</a>
+                    </div>
+<div class="footer__img">
+                <img class="footer__img__item" src="images/vk.png" width="34" height="34" alt="">
+                <img class="footer__img__item" src="images/instagram.png" width="34" height="34" alt="">
+            </div>
+ */

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <title>Регистрация</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__line">
+      <div class="header__logo">
+        <a href="index.html" class="header__logo__holder link">
+          <div class="logo__img__holder">
+            <img src="images/logo.jpg" class="logo__img" width="75" height="40" alt="">
+          </div>
+          <div class="logo__title">
+            <span class="logo__title__text">OhayoBook</span>
+          </div>
+        </a>
+      </div>
+      <div class="header__burger">
+        <span class="header__burger__stripes"></span>
+      </div>
+      <nav class="header__menu">
+        <ul class="header__list">
+          <li class="header__list__item">
+            <a href="catalog.html" class="_catalog _catalog_text">Каталог</a>
+          </li>
+          <li class="header__list__item">
+            <a href="#" class="header__list__item__text">Контакты</a>
+          </li>
+          <li class="header__list__item__s">
+            <div class="search">
+              <div class="search__input">
+                <form action="/search/" class="form-search">
+                  <input type="search" name="text" autocomplete="off" class="form-search__input">
+                </form>
+              </div>
+              <div class="search__img">
+                <img src="images/search.jpg" width="25" height="25" alt="">
+              </div>
+            </div>
+          </li>
+          <li class="header__list__item">
+            <a href="signin.html" class="button signin__btn signin__text link">Войти</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <div class="_signup_container">
+      <h1 class="signup__label signup__label__text">Вход</h1>
+      <form method="post" class="signup__form">
+        <div class="signup__form__text-field">
+          <input type="text" required class="signup__form__text-field__input signup__form__text-field__input__text" placeholder="Имя">
+        </div>
+        <div class="signup__form__text-field">
+          <input type="text" required class="signup__form__text-field__input signup__form__text-field__input__text" placeholder="e-mail">
+        </div>
+        <div class="signup__form__text-field">
+          <input type="password" required class="signup__form__text-field__input signup__form__text-field__input__text" placeholder="Пароль">
+        </div>
+        <div class="signup__form__text-field">
+          <input type="password" required class="signup__form__text-field__input signup__form__text-field__input__text" placeholder="Подтверждение пароля">
+        </div>
+        <div class="signup__submit">
+          <input type="submit" value="Подтвердить" class="signup__submit__btn signup__submit__text">
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__item footer__label">
+      <span class="footer__text">Следите за новостями:</span>
+      <div class="footer__img">
+        <a href="#" class="link">
+          <img class="footer__img__item" src="images/vk.png" width="34" height="34" alt="">
+        </a>
+        <a href="#" class="link">
+          <img class="footer__img__item" src="images/instagram.png" width="34" height="34" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="footer__item owner">
+      <span class="owner__text">ооо “ОхаёБук”, 2023</span>
+    </div>
+  </footer>
+</body>
+</html>
