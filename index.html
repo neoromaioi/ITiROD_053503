@@ -23,31 +23,44 @@
                         </div>
                     </a>
                 </div>
-                <div class="header__burger">
+                <!-- <div class="header__burger">
                     <span class="header__burger__stripes"></span>
-                </div>
+                </div> -->
                 <nav class="header__menu">
                     <ul class="header__list">
                         <li class="header__list__item">
                             <a href="catalog.html" class="_catalog _catalog_text">Каталог</a>
                         </li>
                         <li class="header__list__item">
-                            <a href="#" class="header__list__item__text">Контакты</a>
+                            <a href="maps.html" class="header__list__item__text">Контакты</a>
+                            <!-- <div class="con_dropdown">
+                                <button class="con_dropdown__dropbtn header__list__item__text">Контакты
+                                </button>
+                                <div class="con_dropdown-content">
+                                </div>
+                            </div> -->
                         </li>
                         <li class="header__list__item__s">
                             <div class="search">
                                 <div class="search__input">
-                                    <form action="/search/" class="form-search">
-                                        <input type="search" name="text" autocomplete="off" class="form-search__input">
+                                    <form action="search_page.html" class="form-search">
+                                        <input type="text" name="search" autocomplete="off" class="form-search__input">
+                                        <button class="search__img" type="submit"><img src="images/search.jpg" width="25" height="25" alt=""></button>
                                     </form>
                                 </div>
-                                <div class="search__img">
-                                    <img src="images/search.jpg" width="25" height="25" alt="">
-                                </div>
+                                <!--<div class="search__img">
+                                  <img src="images/search.jpg" width="25" height="25" alt="">
+                                </div>-->
                             </div>
                         </li>
                         <li class="header__list__item">
                             <a href="signin.html" class="button signin__btn signin__text link">Войти</a>
+                            <div class="dropdown">
+                                <button class="dropdown__dropbtn">Menu
+                                </button>
+                                <div class="dropdown-content">
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </nav>
@@ -59,7 +72,7 @@
                 <div class="new-day__title new-day__text">
                     Начни свой день с случайной книги
                 </div>
-                <a class="button new-day__btn new-day__btn__text" href="#">Начать
+                <a class="button new-day__btn new-day__btn__text" href="#" id="randomBook">Начать
                     <div class="new-day__btn__img">
                         <img src="images/arrow.png" width="15" height="14" alt="">
                     </div>
@@ -69,9 +82,9 @@
         <div class="top-books _container">
             <span class="top-books__text">Лучшие книги:</span>
             <ul class="top-books__ul">
-                <li class="top-book__item">
+                <!-- <li class="top-book__item">
                     <a href="book_page.html" class="link top-book__item__link">
-                        <img src="images/book_covers/Plato's_dialogues.jpg" class="top-book__item__img" alt="Plato's Dialogues">
+                        <img src="images/book_covers/Plato's_dialogues.jpg" class="top-book__item__img">
                         <div class="top-book__item__title">
                             <span class="top-book__item__text">Диалоги</span>
                         </div>
@@ -79,7 +92,7 @@
                 </li>
                 <li class="top-book__item">
                     <a href="book_page.html" class="link top-book__item__link">
-                        <img src="images/book_covers/Plato's_dialogues.jpg" class="top-book__item__img" alt="Plato's Dialogues">
+                        <img src="images/book_covers/Plato's_dialogues.jpg" class="top-book__item__img">
                         <div class="top-book__item__title">
                             <span class="top-book__item__text">Диалоги</span>
                         </div>
@@ -87,7 +100,7 @@
                 </li>
                 <li class="top-book__item">
                     <a href="book_page.html" class="link top-book__item__link">
-                        <img src="images/book_covers/Plato's_dialogues.jpg" class="top-book__item__img" alt="Plato's Dialogues">
+                        <img src="images/book_covers/Plato's_dialogues.jpg" class="top-book__item__img">
                         <div class="top-book__item__title">
                             <span class="top-book__item__text">Диалоги</span>
                         </div>
@@ -95,7 +108,7 @@
                 </li>
                 <li class="top-book__item">
                     <a href="book_page.html" class="link top-book__item__link">
-                        <img src="images/book_covers/Plato's_dialogues.jpg" class="top-book__item__img" alt="Plato's Dialogues">
+                        <img src="images/book_covers/Plato's_dialogues.jpg" class="top-book__item__img">
                         <div class="top-book__item__title">
                             <span class="top-book__item__text">Диалоги</span>
                         </div>
@@ -103,7 +116,7 @@
                 </li>
                 <li class="top-book__item">
                     <a href="book_page.html" class="link top-book__item__link">
-                        <img src="images/book_covers/Plato's_dialogues.jpg" class="top-book__item__img" alt="Plato's Dialogues">
+                        <img src="images/book_covers/Plato's_dialogues.jpg" class="top-book__item__img">
                         <div class="top-book__item__title">
                             <span class="top-book__item__text">Диалоги</span>
                         </div>
@@ -111,7 +124,7 @@
                 </li>
                 <li class="top-book__item">
                     <a href="book_page.html" class="link top-book__item__link">
-                        <img src="images/book_covers/Plato's_dialogues.jpg" class="top-book__item__img" alt="Plato's Dialogues">
+                        <img src="images/book_covers/Plato's_dialogues.jpg" class="top-book__item__img">
                         <div class="top-book__item__title">
                             <span class="top-book__item__text">Диалоги</span>
                         </div>
@@ -119,12 +132,12 @@
                 </li>
                 <li class="top-book__item">
                     <a href="book_page.html" class="link top-book__item__link">
-                        <img src="images/book_covers/Plato's_dialogues.jpg" class="top-book__item__img" alt="Plato's Dialogues">
+                        <img src="images/book_covers/Plato's_dialogues.jpg" class="top-book__item__img">
                         <div class="top-book__item__title">
                             <span class="top-book__item__text">Диалоги</span>
                         </div>
                     </a>
-                </li>
+                </li> -->
             </ul>
         </div>
     </main>
@@ -132,10 +145,10 @@
         <div class="footer__item footer__label">
             <span class="footer__text">Следите за новостями:</span>
             <div class="footer__img">
-                <a href="#" class="link">
+                <a href="https://vk.com/hnnnnnnnnnnnnnnnn" class="link">
                     <img class="footer__img__item" src="images/vk.png" width="34" height="34" alt="">
                 </a>
-                <a href="#" class="link">
+                <a href="https://www.instagram.com/explore/tags/seoul/" class="link">
                     <img class="footer__img__item" src="images/instagram.png" width="34" height="34" alt="">
                 </a>
             </div>
@@ -144,5 +157,9 @@
             <span class="owner__text">ооо “ОхаёБук”, 2023</span>
         </div>
     </footer>
+    <script src="js/data.js"></script>
+    <script src="js/check-auth-user.js"></script>
+    <script src="js/random-book-load.js"></script>
+    <script src="js/top-books-load.js"></script>
 </body>
 </html>

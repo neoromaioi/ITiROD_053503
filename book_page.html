@@ -23,31 +23,38 @@
           </div>
         </a>
       </div>
-      <div class="header__burger">
-        <span class="header__burger__stripes"></span>
-      </div>
+      <!-- <div class="header__burger">
+                    <span class="header__burger__stripes"></span>
+                </div> -->
       <nav class="header__menu">
         <ul class="header__list">
           <li class="header__list__item">
             <a href="catalog.html" class="_catalog _catalog_text">Каталог</a>
           </li>
           <li class="header__list__item">
-            <a href="#" class="header__list__item__text">Контакты</a>
+            <a href="maps.html" class="header__list__item__text">Контакты</a>
           </li>
           <li class="header__list__item__s">
             <div class="search">
               <div class="search__input">
-                <form action="/search/" class="form-search">
-                  <input type="search" name="text" autocomplete="off" class="form-search__input">
+                <form action="search_page.html" class="form-search">
+                  <input type="text" name="search" autocomplete="off" class="form-search__input">
+                  <button class="search__img" type="submit"><img src="images/search.jpg" width="25" height="25" alt=""></button>
                 </form>
               </div>
-              <div class="search__img">
+              <!--<div class="search__img">
                 <img src="images/search.jpg" width="25" height="25" alt="">
-              </div>
+              </div>-->
             </div>
           </li>
           <li class="header__list__item">
             <a href="signin.html" class="button signin__btn signin__text link">Войти</a>
+            <div class="dropdown">
+              <button class="dropdown__dropbtn">Menu
+              </button>
+              <div class="dropdown-content">
+              </div>
+            </div>
           </li>
         </ul>
       </nav>
@@ -59,22 +66,22 @@
         <span class="genres__label genres__label__text">Жанры:</span>
         <ul class="genres__ul">
           <li class="genres__item">
-            <a href="#" class="link genres__item__link">Все жанры</a>
+            <a href="catalog.html" class="link genres__item__link">Все жанры</a>
           </li>
           <li class="genres__item">
-            <a href="#" class="link genres__item__link">Фентези</a>
+            <a href="catalog.html?genre=Fantasy" class="link genres__item__link">Фентези</a>
           </li>
           <li class="genres__item">
-            <a href="#" class="link genres__item__link">Научная фантастика</a>
+            <a href="catalog.html?genre=Science fiction" class="link genres__item__link">Научная фантастика</a>
           </li>
           <li class="genres__item">
-            <a href="#" class="link genres__item__link">Философия</a>
+            <a href="catalog.html?genre=Philosophy" class="link genres__item__link">Философия</a>
           </li>
           <li class="genres__item">
-            <a href="#" class="link genres__item__link">Мемуары</a>
+            <a href="catalog.html?genre=Memoirs" class="link genres__item__link">Мемуары</a>
           </li>
           <li class="genres__item">
-            <a href="#" class="link genres__item__link">Классическая литература</a>
+            <a href="catalog.html?genre=Classic" class="link genres__item__link">Классическая литература</a>
           </li>
         </ul>
       </div>
@@ -82,7 +89,7 @@
         <div class="book__container">
           <div class="book__cover-and-traits">
             <div class="book__cover">
-              <img src="images/book_covers/Plato's_dialogues.jpg" alt="Plato's Dialogues" class="book__cover__img">
+              <img src="#" class="book__cover__img" id="bookCover">
             </div>
             <div class="book__traits">
               <dl class="book__traits__ul">
@@ -90,54 +97,78 @@
                   <span class="book__traits__item__text">Издательство:</span>
                 </dt>
                 <dt class="book__traits__item">
-                  <span class="book__traits__item__text">АСТ</span>
+                  <span class="book__traits__item__text" id="publishingHouse"></span>
                 </dt>
                 <dt class="book__traits__item">
                   <span class="book__traits__item__text">Размер:</span>
                 </dt>
                 <dt class="book__traits__item">
-                  <span class="book__traits__item__text">180x115x26 мм</span>
+                  <span class="book__traits__item__text" id="size"></span>
                 </dt>
                 <dt class="book__traits__item">
                   <span class="book__traits__item__text">Страниц:</span>
                 </dt>
                 <dt class="book__traits__item">
-                  <span class="book__traits__item__text">352</span>
+                  <span class="book__traits__item__text" id="pages"></span>
                 </dt>
                 <dt class="book__traits__item">
                   <span class="book__traits__item__text">ISBN:</span>
                 </dt>
                 <dt class="book__traits__item">
-                  <span class="book__traits__item__text">978-5-17-137996-4</span>
+                  <span class="book__traits__item__text"  id="isbn"></span>
                 </dt>
               </dl>
             </div>
           </div>
           <div class="book__description">
             <div class="book__title">
-              <span class="book__title__text">Диалоги</span>
+              <span class="book__title__text" id="bookTitle"></span>
             </div>
             <div class="book__author-and-year">
               <div class="book__author">
-                <span class="book__author__text">Платон</span>
-                <span class="book__author__text">,&nbsp;</span>
+                <span class="book__author__text" id="bookAuthor"></span>
+                <!-- <span class="book__author__text">, </span> -->
               </div>
               <div class="book__year">
-                <span class="book__year__text">5-4вв. до Р.Х.</span>
+                <span class="book__year__text" id="bookYear"></span>
               </div>
             </div>
             <div class="book__content">
-              <span class="book__content__text">Апология Сократа (др.-греч. Ἀπολογία Σωκράτους) — одно из наиболее ранних произведений Платона, которое содержит три речи Сократа во время суда. Действие разворачивается в начале 399 года до н. э. На философа подали в суд за неуважение к богам, создание новых божеств и развращение юношества. Инициатором судебного преследования был влиятельный политик Древних Афин Анит. Роль официального обвинителя отводилась Мелету.
-
-  В «Апологии» не приведена обвинительная речь, но воспроизведена речь Сократа. После выслушивания сторон проводилось тайное голосование судей. Как отмечают античные и современные авторы, речь Сократа была непрактичной. Вместо того, чтобы, по примеру других афинян, взывать к милосердию, привести жену и детей, которые своим плачем должны разжалобить судей, Сократ был преисполнен достоинства. В этом произведении прозвучало утверждение философа о том, что он самый умный из людей, так как «знает, что ничего не знает». Сократа признали виновным 281 голосами против 220. После обвинительного приговора обвинитель и обвиняемый должны были предложить наказание, а судьи выбирали из двух альтернативных вариантов. Обвинители выступали за смертную казнь. Сократ заявил, что считает себя невиновным и заслуживает наивысшей почести Афин — бесплатного обеда в пританее. Однако, раз того требует обычай, он предложил заменить смерть штрафом в 30 мин. Суд присудил философа к смерти, после чего Сократ произнёс третью речь.
-
-  В научной литературе существуют различные мнения относительно достоверности передачи Платоном слов Сократа во время суда. Платон, хоть и присутствовал на процессе, мог приписать учителю те или иные утверждения. Этим он старался достичь двух целей — создать соответствующий образ учителя и опровергнуть обвинения Поликрата в «Обвинении Сократа» около 393 года до н. э. Вне зависимости от отношения к достоверности «Апологии» большинство исследователей, включая Сёрена Кьеркегора, Ульриха фон Виламовица-Мёлендорфа, Карла Поппера и других знаменитых учёных, отмечали высокий художественный уровень сочинения, который помог и во многом повлиял на создание соответствующего образа «идеального философа» Сократа.</span>
+              <article>
+                <span class="book__content__text" id="bookDescription"></span>
+              </article>
             </div>
           </div>
         </div>
         <div class="book__reviews">
-          <div class="reviews__title reviews__title__text">Отзывы:</div>
-          <div class="reviews__container"></div>
+          <form class="send-review-form"  method="post" action="" novalidate>
+            <div class="send-review-form__rating">
+              <div class="reviews__title reviews__title__text">Оценка:</div>
+              <div class="rate">
+                <input type="radio" id="star10" name="rate" value="10"/>
+                <label for="star10" title="text">10</label>
+                <input type="radio" id="star9" name="rate" value="9" />
+                <label for="star9" title="text">9</label>
+                <input type="radio" id="star8" name="rate" value="8" />
+                <label for="star8" title="text">8</label>
+                <input type="radio" id="star7" name="rate" value="7" />
+                <label for="star7" title="text">7</label>
+                <input type="radio" id="star6" name="rate" value="6" />
+                <label for="star6" title="text">6</label>
+                <input type="radio" id="star5" name="rate" value="5" />
+                <label for="star5" title="text">5</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="text">4</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text">3</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="text">2</label>
+                <input type="radio" id="star1" name="rate" value="1" checked/>
+                <label for="star1" title="text">1</label>
+              </div>
+            </div>
+            <button class="rate__btn rate__btn__text" type="submit">Отправить</button>
+          </form>
         </div>
       </div>
     </div>
@@ -158,5 +189,9 @@
       <span class="owner__text">ооо “ОхаёБук”, 2023</span>
     </div>
   </footer>
+  <script src="js/data.js"></script>
+  <script src="js/check-auth-user.js"></script>
+  <script src="js/add-mark.js"></script>
+  <script src="js/book_page_load.js"></script>
 </body>
 </html>

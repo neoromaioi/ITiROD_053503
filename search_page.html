@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <title>Каталог</title>
+</head>
+<body>
+<header class="header">
+  <div class="header__line">
+    <div class="header__logo">
+      <a href="index.html" class="header__logo__holder link">
+        <div class="logo__img__holder">
+          <img src="images/logo.jpg" class="logo__img" width="75" height="40" alt="">
+        </div>
+        <div class="logo__title">
+          <span class="logo__title__text">OhayoBook</span>
+        </div>
+      </a>
+    </div>
+    <!-- <div class="header__burger">
+                   <span class="header__burger__stripes"></span>
+               </div> -->
+    <nav class="header__menu">
+      <ul class="header__list">
+        <li class="header__list__item">
+          <a href="catalog.html" class="_catalog _catalog_text">Каталог</a>
+        </li>
+        <li class="header__list__item">
+          <a href="maps.html" class="header__list__item__text">Контакты</a>
+        </li>
+        <li class="header__list__item__s">
+          <div class="search">
+            <div class="search__input">
+              <form action="search_page.html" class="form-search">
+                <input type="text" name="search" autocomplete="off" class="form-search__input">
+                <button class="search__img" type="submit"><img src="images/search.jpg" width="25" height="25" alt=""></button>
+              </form>
+            </div>
+            <!--<div class="search__img">
+              <img src="images/search.jpg" width="25" height="25" alt="">
+            </div>-->
+          </div>
+        </li>
+        <li class="header__list__item">
+          <a href="signin.html" class="button signin__btn signin__text link">Войти</a>
+          <div class="dropdown">
+            <button class="dropdown__dropbtn">Menu
+            </button>
+            <div class="dropdown-content">
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="main">
+  <div class="wrapper">
+    <div class="genres">
+      <span class="genres__label genres__label__text">Жанры:</span>
+      <ul class="genres__ul">
+        <li class="genres__item">
+          <a href="catalog.html" class="link genres__item__link">Все жанры</a>
+        </li>
+        <li class="genres__item">
+          <a href="catalog.html?genre=Fantasy" class="link genres__item__link">Фентези</a>
+        </li>
+        <li class="genres__item">
+          <a href="catalog.html?genre=Science fiction" class="link genres__item__link">Научная фантастика</a>
+        </li>
+        <li class="genres__item">
+          <a href="catalog.html?genre=Philosophy" class="link genres__item__link">Философия</a>
+        </li>
+        <li class="genres__item">
+          <a href="catalog.html?genre=Memoirs" class="link genres__item__link">Мемуары</a>
+        </li>
+        <li class="genres__item">
+          <a href="catalog.html?genre=Classic" class="link genres__item__link">Классическая литература</a>
+        </li>
+      </ul>
+    </div>
+    <div class="books">
+      <ul class="books__ul">
+      </ul>
+    </div>
+  </div>
+</main>
+<footer class="footer">
+  <div class="footer__item footer__label">
+    <span class="footer__text">Следите за новостями:</span>
+    <div class="footer__img">
+      <a href="#" class="link">
+        <img class="footer__img__item" src="images/vk.png" width="34" height="34" alt="">
+      </a>
+      <a href="#" class="link">
+        <img class="footer__img__item" src="images/instagram.png" width="34" height="34" alt="">
+      </a>
+    </div>
+  </div>
+  <div class="footer__item owner">
+    <span class="owner__text">ооо “ОхаёБук”, 2023</span>
+  </div>
+</footer>
+<script src="js/data.js"></script>
+<script src="js/check-auth-user.js"></script>
+<script src="js/search.js"></script>
+</body>
+</html>

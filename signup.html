@@ -23,31 +23,38 @@
           </div>
         </a>
       </div>
-      <div class="header__burger">
-        <span class="header__burger__stripes"></span>
-      </div>
+      <!-- <div class="header__burger">
+                    <span class="header__burger__stripes"></span>
+                </div> -->
       <nav class="header__menu">
         <ul class="header__list">
           <li class="header__list__item">
             <a href="catalog.html" class="_catalog _catalog_text">Каталог</a>
           </li>
           <li class="header__list__item">
-            <a href="#" class="header__list__item__text">Контакты</a>
+            <a href="maps.html" class="header__list__item__text">Контакты</a>
           </li>
           <li class="header__list__item__s">
             <div class="search">
               <div class="search__input">
-                <form action="/search/" class="form-search">
-                  <input type="search" name="text" autocomplete="off" class="form-search__input">
+                <form action="search_page.html" class="form-search">
+                  <input type="text" name="search" autocomplete="off" class="form-search__input">
+                  <button class="search__img" type="submit"><img src="images/search.jpg" width="25" height="25" alt=""></button>
                 </form>
               </div>
-              <div class="search__img">
+              <!--<div class="search__img">
                 <img src="images/search.jpg" width="25" height="25" alt="">
-              </div>
+              </div>-->
             </div>
           </li>
           <li class="header__list__item">
             <a href="signin.html" class="button signin__btn signin__text link">Войти</a>
+            <div class="dropdown">
+              <button class="dropdown__dropbtn">Menu
+              </button>
+              <div class="dropdown-content">
+              </div>
+            </div>
           </li>
         </ul>
       </nav>
@@ -56,18 +63,22 @@
   <main class="main">
     <div class="_signup_container">
       <h1 class="signup__label signup__label__text">Вход</h1>
-      <form method="post" class="signup__form">
+      <form class="signup__form" action="signin.html" novalidate>
         <div class="signup__form__text-field">
-          <input type="text" required class="signup__form__text-field__input signup__form__text-field__input__text" placeholder="Имя">
+          <input type="text" required id="name" class="signup__form__text-field__input signup__form__text-field__input__text" placeholder="Имя">
+          <p class="error"></p>
         </div>
         <div class="signup__form__text-field">
-          <input type="text" required class="signup__form__text-field__input signup__form__text-field__input__text" placeholder="e-mail">
+          <input type="text" required id="email" class="signup__form__text-field__input signup__form__text-field__input__text" placeholder="e-mail">
+          <p class="error"></p>
         </div>
         <div class="signup__form__text-field">
-          <input type="password" required class="signup__form__text-field__input signup__form__text-field__input__text" placeholder="Пароль">
+          <input type="password" required id="password" class="signup__form__text-field__input signup__form__text-field__input__text" placeholder="Пароль">
+          <p class="error"></p>
         </div>
         <div class="signup__form__text-field">
-          <input type="password" required class="signup__form__text-field__input signup__form__text-field__input__text" placeholder="Подтверждение пароля">
+          <input type="password" required id="confirm-password" class="signup__form__text-field__input signup__form__text-field__input__text" placeholder="Подтверждение пароля">
+          <p class="error"></p>
         </div>
         <div class="signup__submit">
           <input type="submit" value="Подтвердить" class="signup__submit__btn signup__submit__text">
@@ -91,5 +102,6 @@
       <span class="owner__text">ооо “ОхаёБук”, 2023</span>
     </div>
   </footer>
+  <script src="js/register-validation.js"></script>
 </body>
 </html>

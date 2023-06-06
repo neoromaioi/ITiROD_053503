@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <title>Страница книги</title>
+</head>
+<body>
+<header class="header">
+  <div class="header__line">
+    <div class="header__logo">
+      <a href="index.html" class="header__logo__holder link">
+        <div class="logo__img__holder">
+          <img src="images/logo.jpg" class="logo__img" width="75" height="40" alt="">
+        </div>
+        <div class="logo__title">
+          <span class="logo__title__text">OhayoBook</span>
+        </div>
+      </a>
+    </div>
+    <!-- <div class="header__burger">
+                  <span class="header__burger__stripes"></span>
+              </div> -->
+    <nav class="header__menu">
+      <ul class="header__list">
+        <li class="header__list__item">
+          <a href="catalog.html" class="_catalog _catalog_text">Каталог</a>
+        </li>
+        <li class="header__list__item">
+          <a href="maps.html" class="header__list__item__text">Контакты</a>
+        </li>
+        <li class="header__list__item__s">
+          <div class="search">
+            <div class="search__input">
+              <form action="search_page.html" class="form-search">
+                <input type="text" name="search" autocomplete="off" class="form-search__input">
+                <button class="search__img" type="submit"><img src="images/search.jpg" width="25" height="25" alt=""></button>
+              </form>
+            </div>
+            <!--<div class="search__img">
+              <img src="images/search.jpg" width="25" height="25" alt="">
+            </div>-->
+          </div>
+        </li>
+        <li class="header__list__item">
+          <a href="signin.html" class="button signin__btn signin__text link">Войти</a>
+          <div class="dropdown">
+            <button class="dropdown__dropbtn">Menu
+            </button>
+            <div class="dropdown-content">
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="main">
+  <div class="wrapper _wrap_creation">
+    <div class="book_creation">
+      <div class="book__container _cont__creation">
+        <div class="book__cover-and-traits">
+          <div class="book__cover">
+            <input type="file" class="book__cover__img" id="bookCover">
+          </div>
+          <div class="book__traits">
+            <dl class="book__traits__ul">
+              <dt class="book__traits__item">
+                <span class="book__traits__item__text">Издательство:</span>
+              </dt>
+              <dt class="book__traits__item">
+                <input class="book__traits__item__text" id="publishingHouse">
+              </dt>
+              <dt class="book__traits__item">
+                <span class="book__traits__item__text">Размер:</span>
+              </dt>
+              <dt class="book__traits__item">
+                <input class="book__traits__item__text" id="size">
+              </dt>
+              <dt class="book__traits__item">
+                <span class="book__traits__item__text">Страниц:</span>
+              </dt>
+              <dt class="book__traits__item">
+                <input class="book__traits__item__text" id="pages">
+              </dt>
+              <dt class="book__traits__item">
+                <span class="book__traits__item__text">ISBN:</span>
+              </dt>
+              <dt class="book__traits__item">
+                <input class="book__traits__item__text" id="isbn">
+              </dt>
+              <dt class="book__traits__item">
+                <span class="book__traits__item__text">Жанр:</span>
+              </dt>
+              <dt class="book__traits__item">
+                <input class="book__traits__item__text" id="genre">
+              </dt>
+            </dl>
+          </div>
+        </div>
+        <div class="book__description _desc__creation">
+          <div class="book__title">
+            <input class="book__title__text _title__creation" id="bookTitle">
+          </div>
+          <div class="book__author-and-year">
+            <div class="book__author">
+              <input class="book__author__text _author__creation" id="bookAuthor">
+              <!-- <span class="book__author__text">, </span> -->
+            </div>
+            <div class="book__year">
+              <input class="book__year__text _year__creation" id="bookYear">
+            </div>
+          </div>
+          <div class="book__content">
+            <form action="catalog.html" class="creation__book__form">
+              <textarea class="book__content__text _description__creation" id="bookDescription"></textarea>
+              <button class="create__btn create__btn__text" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="footer">
+  <div class="footer__item footer__label">
+    <span class="footer__text">Следите за новостями:</span>
+    <div class="footer__img">
+      <a href="#" class="link">
+        <img class="footer__img__item" src="images/vk.png" width="34" height="34" alt="">
+      </a>
+      <a href="#" class="link">
+        <img class="footer__img__item" src="images/instagram.png" width="34" height="34" alt="">
+      </a>
+    </div>
+  </div>
+  <div class="footer__item owner">
+    <span class="owner__text">ооо “ОхаёБук”, 2023</span>
+  </div>
+</footer>
+<script src="js/data.js"></script>
+<script src="js/book_creation.js"></script>
+</body>
+</html>

@@ -23,31 +23,38 @@
                     </div>
                 </a>
             </div>
-            <div class="header__burger">
-                <span class="header__burger__stripes"></span>
-            </div>
+            <!-- <div class="header__burger">
+                    <span class="header__burger__stripes"></span>
+                </div> -->
             <nav class="header__menu">
                 <ul class="header__list">
                     <li class="header__list__item">
                         <a href="catalog.html" class="_catalog _catalog_text">Каталог</a>
                     </li>
                     <li class="header__list__item">
-                        <a href="#" class="header__list__item__text">Контакты</a>
+                        <a href="maps.html" class="header__list__item__text">Контакты</a>
                     </li>
                     <li class="header__list__item__s">
                         <div class="search">
                             <div class="search__input">
-                                <form action="/search/" class="form-search">
-                                    <input type="search" name="text" autocomplete="off" class="form-search__input">
+                                <form action="search_page.html" class="form-search">
+                                    <input type="text" name="search" autocomplete="off" class="form-search__input">
+                                    <button class="search__img" type="submit"><img src="images/search.jpg" width="25" height="25" alt=""></button>
                                 </form>
                             </div>
-                            <div class="search__img">
-                                <img src="images/search.jpg" width="25" height="25" alt="">
-                            </div>
+                            <!--<div class="search__img">
+                              <img src="images/search.jpg" width="25" height="25" alt="">
+                            </div>-->
                         </div>
                     </li>
                     <li class="header__list__item">
                         <a href="#" class="button signin__btn signin__text link">Войти</a>
+                        <div class="dropdown">
+                            <button class="dropdown__dropbtn">Menu
+                            </button>
+                            <div class="dropdown-content">
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </nav>
@@ -56,12 +63,14 @@
     <main class="main">
         <div class="_signin_container">
             <h1 class="signin__label signin__label__text">Вход</h1>
-            <form method="post" class="signin__form">
+            <form class="signin__form" action="index.html" novalidate>
                 <div class="signin__form__text-field">
-                    <input type="text" required class="signin__form__text-field__input signin__form__text-field__input__text" placeholder="Имя">
+                    <input type="text" required id="name" class="signin__form__text-field__input signin__form__text-field__input__text" placeholder="Имя">
+                    <p class="error"></p>
                 </div>
                 <div class="signin__form__text-field">
-                    <input type="password" required class="signin__form__text-field__input signin__form__text-field__input__text" placeholder="Пароль">
+                    <input type="password" required id="password" class="signin__form__text-field__input signin__form__text-field__input__text" placeholder="Пароль">
+                    <p class="error"></p>
                 </div>
                 <div class="signin__submit">
                     <input type="submit" value="Подтвердить" class="signin__submit__btn signin__submit__text">
@@ -88,5 +97,6 @@
             <span class="owner__text">ооо “ОхаёБук”, 2023</span>
         </div>
     </footer>
+    <script src="js/login-validation.js"></script>
 </body>
 </html>

@@ -3,6 +3,151 @@ body {
     margin: 0;
 }
 
+.dropdown {
+    display: none;
+    overflow: hidden;
+}
+
+.dropdown .dropdown__dropbtn {
+    width: 130px;
+    font-size: 22px;
+    font-weight: 400;
+    border: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.dropdown:hover .dropdown__dropbtn {
+    color: #d3d3d3;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 30px;
+    background-color: #f9f9f9;
+    width: 305px;
+}
+
+.dropdown-content a {
+    font-size: 16px;
+    font-weight: 400;
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content p {
+    font-size: 16px;
+    font-weight: 400;
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.map {
+    width: 500px;
+    height: 500px;
+    background-color: #333;
+}
+
+[class*="copyrights-pane"] {
+    display: none !important;
+}
+
+[class*="ground-pane"] {
+    filter: grayscale(1);
+}
+
+.con_dropdown {
+    overflow: hidden;
+}
+
+.con_dropdown .con_dropdown__dropbtn {
+    width: 130px;
+    font-size: 22px;
+    font-weight: 400;
+    border: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.con_dropdown:hover .con_dropdown__dropbtn {
+    color: #d3d3d3;
+}
+
+.con_dropdown-content {
+    display: none;
+    position: absolute;
+    right: 30px;
+    background-color: #f9f9f9;
+    width: 305px;
+}
+
+.con_dropdown-content a {
+    font-size: 16px;
+    font-weight: 400;
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.con_dropdown-content p {
+    font-size: 16px;
+    font-weight: 400;
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+}
+
+.con_dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.con_dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.error {
+    margin-bottom: 30px;
+    width: 100%;
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 20px;
+    color: #ff0000;
+}
+
+.error_small {
+    text-align: center;
+    width: 100%;
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 20px;
+    color: #ff0000;
+}
+
+
+
 .link {
     text-decoration: none;
     color: black;
@@ -86,6 +231,9 @@ body {
 
 .search__img {
     margin-left: 8px;
+    padding: 0;
+    border: none;
+    height: 25px;
 }
 
 .search__input {
@@ -93,7 +241,7 @@ body {
 }
 
 .form-search {
-    display: inline-block;
+    display: flex;
     border-bottom: 1px solid;
     width: 100%;
 }
@@ -429,6 +577,10 @@ body {
     left: 5px;
 }*/
 
+.book__container {
+    display: flex;
+}
+
 .book {
     max-width: 80%;
     width: 100%;
@@ -436,9 +588,22 @@ body {
     padding-top: 30px;
 }
 
-.book__container {
-    display: flex;
+.book_creation {
+    max-width: 100%;
+    width: 100%;
+    background-color: #F5F6F7;
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
+
+
+._desc__creation {
+    max-width: 100%;
+    width: auto;
+
+}
+
+
 
 .book__cover-and-traits {
 
@@ -522,18 +687,198 @@ body {
     line-height: 32px;
 }
 
-.book__reviews {
+.creation__book__form {
+    display: flex;
+    flex-direction: column;
+}
 
+.create__btn {
+    margin-top: 10px;
+    padding: 10px 10px 10px;
+    background: transparent;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.create__btn:hover {
+    background: black;
+    color: white;
+}
+
+.create__btn__text {
+    color: black;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.create__btn__text:hover {
+    color: white;
+}
+
+.book__reviews {
+    padding: 80px 0 80px 80px;
 }
 
 .reviews__title {
-    padding: 80px 0 80px 80px;
+
+}
+
+.send-review-form {
+    display: flex;
+}
+
+.rate {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.send-review-form__rating {
+    display: flex;
 }
 
 .reviews__title__text {
     font-weight: 500;
     font-size: 36px;
     color: black;
+}
+
+.rate > label:last-child {
+    padding-left: 20px;
+}
+
+.rate > label {
+    padding-top: 5px;
+    padding-left: 10px;
+    font-size: 32px;
+    color: #CDCDCD;
+    cursor: pointer;
+    margin-right: 15px;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.rate > input {
+    display: none
+}
+
+.rate > input#star10:checked + label {
+    color: #00DF59;
+    scale: 1.5;
+}
+.rate > input#star9:checked +label {
+    color: #00DF59;
+    scale: 1.5;
+}
+.rate > input#star8:checked + label {
+    color: #00DF59;
+    scale: 1.5;
+}
+.rate > input#star7:checked + label {
+    color: #00DF59;
+    scale: 1.5;
+}
+.rate > input#star6:checked + label {
+    color: #8b8b8b;
+    scale: 1.5;
+}
+.rate > input#star5:checked + label {
+    color: #8b8b8b;
+    scale: 1.5;
+}
+.rate > input#star4:checked + label {
+    color: #df2100;
+    scale: 1.5;
+}
+.rate > input#star3:checked + label {
+    color: #df2100;
+    scale: 1.5;
+}
+.rate > input#star2:checked + label {
+    color: #df2100;
+    scale: 1.5;
+}
+.rate > input#star1:checked + label {
+    color: #df2100;
+    scale: 1.5;
+}
+
+.rate > input#star10:hover + label {
+    color: #00DF59;
+    scale: 1.5;
+}
+
+.rate > input#star9:hover + label {
+    color: #00DF59;
+    scale: 1.5;
+}
+
+.rate > input#star8:hover + label {
+    color: #00DF59;
+    scale: 1.5;
+}
+
+.rate > input#star7:hover + label {
+    color: #00DF59;
+    scale: 1.5;
+}
+
+.rate > input#star6:hover + label {
+    color: #8b8b8b;
+    scale: 1.5;
+}
+
+.rate > input#star5:hover + label {
+    color: #8b8b8b;
+    scale: 1.5;
+}
+
+.rate > input#star4:hover + label {
+    color: #df2100;
+    scale: 1.5;
+}
+
+.rate > input#star3:hover + label {
+    color: #df2100;
+    scale: 1.5;
+}
+
+.rate > input#star2:hover + label {
+    color: #df2100;
+    scale: 1.5;
+}
+
+.rate > input#star1:hover + label {
+    color: #df2100;
+    scale: 1.5;
+}
+
+.rate__btn {
+    margin-left: 20px;
+    padding: 10px 10px 10px;
+    background: transparent;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.rate__btn:hover {
+    background: black;
+    color: white;
+}
+
+.rate__btn__text {
+    color: black;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.rate__btn__text:hover {
+    color: white;
 }
 
 @media (max-width: 1310px) {
@@ -550,6 +895,14 @@ body {
     }
     .books, .book {
         max-width: 77%;
+    }
+    .rate > label:last-child {
+        padding-left: 10px;
+    }
+
+    .rate > label {
+        padding-left: 5px;
+        font-size: 26px;
     }
 }
 @media (max-width: 1056px) {
@@ -620,6 +973,20 @@ body {
     .book__content__text, .book__author__text, .book__year__text {
         font-size: 18px;
     }
+    .book__reviews {
+        padding-left: 35px;
+    }
+    .rate__btn {
+        margin-left: 5px;
+    }
+    .reviews__title__text {
+        font-size: 28px;
+    }
+    .rate > label {
+        font-size: 26px;
+        padding-top: 2px;
+        padding-left: 0;
+    }
 }
 @media (max-width: 860px) {
     .genres {
@@ -627,6 +994,23 @@ body {
     }
     .books, .book {
         max-width: 75%;
+    }
+    .send-review-form {
+        display: block;
+    }
+    .rate__btn {
+        margin-top: 15px;
+    }
+    ._title__creation {
+        width: 350px;
+    }
+
+    ._author__creation {
+        width: 150px;
+    }
+
+    ._year__creation {
+        width: 150px;
     }
 }
 @media (max-width: 767px) {
@@ -711,6 +1095,7 @@ body {
         width: 150px;
         height: 250px;
     }
+
 }
 
 @media (max-width: 650px) {
@@ -741,11 +1126,31 @@ body {
         font-size: 32px;
     }
     .reviews__title {
-        padding-top: 60px;
-        padding-left: 20px;
+        padding-top: 0;
+        padding-left: 0;
     }
     .reviews__title__text {
         font-size: 32px;
+    }
+    .send-review-form {
+        display: flex;
+        flex-direction: column;
+    }
+    .send-review-form__rating {
+        display: block;
+    }
+    .rate {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .rate > label {
+
+    }
+    .rate > label:last-child {
+        padding-left: 0;
+    }
+    .rate__btn {
+        margin-right: 10px;
     }
 }
 
@@ -950,6 +1355,9 @@ body {
     .wrapper {
         margin-top: 50px;
     }
+    .book_creation {
+        padding-bottom: 70px;
+    }
 }
 @media (max-width: 470px) {
     .genres {
@@ -971,6 +1379,17 @@ body {
     }
     .books, .book {
         max-width: 63%;
+    }
+    ._title__creation {
+        width: 250px;
+    }
+
+    ._author__creation {
+        width: 120px;
+    }
+
+    ._year__creation {
+        width: 120px;
     }
 }
 
