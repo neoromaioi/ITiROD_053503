@@ -25,7 +25,7 @@ ____
 
 https://www.figma.com/file/HjKeMOxE39bneY0BSFd1KK/ITIROD2?type=design&node-id=5-293&t=CIVetpg9mlrYtPsc-0
 ____
-![book page](https://github.com/neoromaioi/ITiROD_053503/blob/lab1/Pictures/Book%20page.png)
+![book page](https://github.com/neoromaioi/ITiROD_053503/blob/lab1/Pictures/Book%20detail%20page.png)
 
 
 ## Main functions
