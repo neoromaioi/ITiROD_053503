@@ -5,27 +5,27 @@ ____
 
 # Main page
 
-https://www.figma.com/file/HjKeMOxE39bneY0BSFd1KK/ITIROD2?node-id=0%3A1&t=Hj6gkcISgedn3Obx-1
+https://www.figma.com/file/HjKeMOxE39bneY0BSFd1KK/ITIROD2?type=design&node-id=5-293&t=CIVetpg9mlrYtPsc-0
 ____
-![main page](https://github.com/neoromaioi/ITiROD_053503/blob/lab2/Pictures/Main%20page.png)
+![main page](https://github.com/neoromaioi/ITiROD_053503/blob/lab1/Pictures/Main%20page.png)
 
 # Authentification page
 
-https://www.figma.com/file/HjKeMOxE39bneY0BSFd1KK/ITIROD2?node-id=5%3A153&t=Hj6gkcISgedn3Obx-1
+https://www.figma.com/file/HjKeMOxE39bneY0BSFd1KK/ITIROD2?type=design&node-id=5-293&t=CIVetpg9mlrYtPsc-0
 ____
-![sign in](https://github.com/neoromaioi/ITiROD_053503/blob/lab2/Pictures/Sign%20in.png)
+![sign in](https://github.com/neoromaioi/ITiROD_053503/blob/lab1/Pictures/Sign%20in.png)
 
 # Catalog page
 
-https://www.figma.com/file/HjKeMOxE39bneY0BSFd1KK/ITIROD2?node-id=5%3A200&t=Hj6gkcISgedn3Obx-1
+https://www.figma.com/file/HjKeMOxE39bneY0BSFd1KK/ITIROD2?type=design&node-id=5-293&t=CIVetpg9mlrYtPsc-0
 ____
-![catalog](https://github.com/neoromaioi/ITiROD_053503/blob/lab2/Pictures/Catalog.png)
+![catalog](https://github.com/neoromaioi/ITiROD_053503/blob/lab1/Pictures/Catalog.png)
 
 # Book page
 
-https://www.figma.com/file/HjKeMOxE39bneY0BSFd1KK/ITIROD2?node-id=5%3A293&t=Hj6gkcISgedn3Obx-1
+https://www.figma.com/file/HjKeMOxE39bneY0BSFd1KK/ITIROD2?type=design&node-id=5-293&t=CIVetpg9mlrYtPsc-0
 ____
-![book page](https://github.com/neoromaioi/ITiROD_053503/blob/lab2/Pictures/Book%20page.png)
+![book page](https://github.com/neoromaioi/ITiROD_053503/blob/lab1/Pictures/Book%20page.png)
 
 
 ## Main functions
